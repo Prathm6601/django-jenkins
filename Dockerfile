@@ -6,5 +6,6 @@ COPY . .
 RUN python manage.py migrate
 EXPOSE 8000
 CMD ["python","manage.py","runserver","0.0.0.0:8000"]
+#[runserver command work a built-in subcommand of Django's manage.py file that will start up a development server for this specific Django project.]
 
 
